@@ -44,25 +44,25 @@
 #Выведите минимальное количество монет, которые нужно переве
 
 import random
-MIN = 3
-MAX = 33
-count_coin1 =0
-count_coin2 =0
-count = 0
-n_coin = int(input("Введите кол-о монет :"))
-for i in range(n_coin) :
-   coin = random.randint(MIN,MAX)
-   print(coin, end=" ")
-if (coin % 2 == 0 ):
-   count_coin1 = coin
-   count += 1
+n_coin = int(input("Введите кол-во монет :"))
+eagle=0
+tails=0
+count=0
+count2=0
+coin = [random.randint(0,10)for i in range(n_coin)] 
+if coin[i] % 2 :
+    eagle +=1
+    count +=1
 else:
-   count_coin2 = coin
-   count += 1
-if (count_coin1 > count_coin2):
-   print(f"Минимальное число {count_coin2}") 
+    tails +=1
+    count2 +=1
+if count > count2 :
+    print(count2)
 else:
-   print(f"Минимальное число1 {count_coin1}") 
+    print(count)
+
+
+ 
     
 #Задача 12: Петя и Катя – брат и сестра. Петя 
  #задумывает два натуральных числа X и Y (X,Y≤1000),
@@ -82,11 +82,10 @@ else:
 
 #Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 # number = int(input("Введите степень 2-ки : "))
-# n=2
 # power = 0
-# count = 0
-# nCount=0
-# while power <= number:
-#     print(power)
-#     count += 1
-#     power = count
+# count =0
+# while number > power :
+#     power += 1
+#     count = power
+#     print(f'Все степени 2-ки :{count}')
+    
