@@ -206,19 +206,101 @@
 # которое может собрать за один заход собирающий модуль, 
 # находясь перед некоторым кустом заданной во входном файле грядки.
 
-import random
-print('Введите количество кустов :')
-bushes = input()
+# import random
+# print('Введите количество кустов :')
+# bushes = input()
 
-MAXIMUM = 7
-MINIMUM = 21
-max_berry = 0 
+# MAXIMUM = 7
+# MINIMUM = 21
+# max_berry = 0 
 
-berrys = [random.randint(MINIMUM,MAXIMUM)for i in range(bushes)]
-print(berrys)
+# berrys = [random.randint(MINIMUM,MAXIMUM)for i in range(bushes)]
+# print(berrys)
 
-for i in range(bushes) :
-    sum_berrys = 
+# for i in range(bushes) :
+#     sum_berrys = 
 
 
+# Напишите функцию f, которая на вход принимает два числа a и b,
+# и возводит число a в целую степень b с помощью рекурсии.
+# n = int(input('Введите число :'))
+# power_n =int(input('Введите степень :'))
 
+
+# def pow(a,b) :
+#     if b <= 0:
+#         return 1
+#     else:
+#         return pow (a ** b)
+
+# print(pow(n,power_n))
+
+# Напишите рекурсивную функцию sum(a, b), возвращающую сумму двух целых неотрицательных чисел.
+# Из всех арифметических операций допускаются только +1 и -1.
+# Также нельзя использовать циклы.
+
+# import random
+
+# size_1 = int(input('Размер первого списка: '))
+# size_2 = int(input('Размер второго списка: '))
+
+# print(lst_1 := [random.randint(0,10) for _ in range(size_1)])
+# print(lst_2 := [random.randint(0,10) for _ in range(size_2)])
+
+# print([i for i in lst_1 if i not in lst_2])
+
+# # for i in lst_1:
+# #     if i not in lst_2:
+# #         lst_3.append(i)
+
+# def summ_divider(number):
+#     summa = 0
+#     for i in range(1, number // 2 + 1):
+#         if number % i == 0:
+#             summa += i
+#     return summa
+
+
+# friendly_dict = {num: summ_divider(num) for num in range(10000)}
+
+# for num in range(10000):
+#     friendly_num = friendly_dict.get(num)
+#     if num == friendly_dict.get(friendly_num) and num < friendly_num:
+#         print(num, friendly_num)
+
+
+#     friendly_num = summ_divider(num)
+#     if num == summ_divider(friendly_num) and num < friendly_num:
+#         print(num, friendly_num)
+
+
+# Задача 30:  Заполните массив элементами арифметической прогрессии. 
+# Её первый элемент, разность и количество элементов нужно ввести с клавиатуры.
+# Формула для получения n-го члена прогрессии: an = a1 + (n-1) * d.
+# Каждое число вводится с новой строки.
+
+# num = int(input('Введите число :'))
+# num2 = int(input('Введите разность :'))
+# num3 = int(input('Введите количество эл-в :'))
+
+# print(progression :=[ num + (i) * num2 for i in range(num3+1)])
+
+    
+
+# Задача 32: Определить индексы элементов списка,
+# значения которых принадлежат заданному диапазону 
+# (т.е. не меньше заданного минимума 
+#  и не больше заданного максимума)
+# import random
+
+
+# minimum_1 = int(input('Введите число :')) 
+# maximum_2 = int(input('Введите число :'))
+# list_2 = []
+
+# print(list_1 := [random.randint(0,99) for _ in range(10)]) 
+
+# for i in range(len(list_1)):
+#      if list_1[i] >= minimum_1 and list_1[i] <= maximum_2:
+#             list_2.append(i)
+# print(list_2)
